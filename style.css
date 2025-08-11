@@ -7,7 +7,6 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  text-transform: capitalize;
 }
 html {
   font-size: 62.5%;
@@ -142,6 +141,10 @@ a.select-property {
 .details-container {
   display: flex;
   flex-direction: row;
+}
+.accommodation-text {
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .home-page {
