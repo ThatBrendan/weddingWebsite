@@ -36,8 +36,15 @@ span {
   margin: 5px 0;
 }
 section#accomodation,
-section#schedule {
-  padding: 10px 20px;
+section#schedule,
+section#registry {
+  padding: 30px 20px;
+}
+section#registry {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .white-text {
   color: #fffafb;
@@ -87,6 +94,29 @@ section#schedule {
   filter: brightness(0.5);
   z-index: 0;
 }
+#schedule,
+#accommodation {
+  position: relative;
+  z-index: 1;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#schedule .background,
+#accommodation .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("backdrop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1) opacity(40%);
+  z-index: -1;
+}
 .hero-text {
   position: relative;
   z-index: 1;
@@ -121,6 +151,18 @@ a.select-property {
   text-align: center;
   margin-top: auto;
 }
+a.registry-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: underline;
+  color: black;
+  font-size: 18px;
+}
+.registry-container {
+  padding: 30px 0;
+}
 .white-wedding,
 .traditional-wedding {
   display: flex;
@@ -142,7 +184,8 @@ a.select-property {
   display: flex;
   flex-direction: row;
 }
-.accommodation-text {
+.accommodation-text,
+.registry-text {
   display: flex;
   justify-content: center;
 }
@@ -178,6 +221,9 @@ a.select-property {
   section#accomodation,
   section#schedule {
     padding: 5px 10px;
+  }
+  section#accommodation {
+    min-height: 992px;
   }
   .wedding-card {
     width: 100%;
