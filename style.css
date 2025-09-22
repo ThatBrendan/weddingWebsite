@@ -171,6 +171,9 @@ a.registry-link {
   margin-bottom: 20px;
   border-bottom: 1px solid black;
 }
+.trad-details-container {
+  text-align: center;
+}
 
 .wedding-card {
   width: 75%;
